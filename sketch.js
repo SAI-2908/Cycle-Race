@@ -30,7 +30,7 @@ function preload(){
   oppRed1Img = loadAnimation("opponent7.png","opponent8.png");
   oppRed2Img = loadAnimation("opponent9.png");
   
-  cycleBell = loadSound("bell.mp3");
+  
   gameOverImg = loadImage("gameOver.png");
 }
 
@@ -85,11 +85,7 @@ function draw() {
     path.x = width/2;
   }
   
-    //code to play cycle bell sound
-  if(keyDown("space")) {
-    cycleBell.play();
-  }
-  
+   
   //creating continous opponent players
   var select_oppPlayer = Math.round(random(1,3));
   
